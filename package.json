@@ -1,0 +1,11 @@
+{
+  "name": "huddle-landing-page__project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./main-scss:./style/main.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
