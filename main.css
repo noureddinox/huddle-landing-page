@@ -1,0 +1,111 @@
+:root{
+  --font: "Roboto", sans-serif;
+  --dark: #0e2955;
+  --dark-light: #61789e;
+}
+
+/* Reset and commons tags */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+body {
+  background: center/ cover url("./images/bg-hero-desktop.svg");
+}
+
+p{
+  font: 400 1rem/ 24px var(--font);
+}
+
+img{
+  display: block;
+  margin: 0;
+  max-width: 100%;
+}
+
+/* Header edits */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header.container{
+  /* To apply margin */
+  margin: 1.5rem auto 9rem auto;
+}
+
+/* Reutilizaveis */
+.button {
+  background-color: white;
+  border-radius: 100px;
+  border: none;
+  box-shadow: 0px 0px 10px 0px #e9e1e1;
+  font: 400 1rem/ 100% var(--font);
+  padding: 15px 60px;
+}
+
+.button--primary {
+  background-color: #fe52c0;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* The container adjusts */
+.container {
+  margin: 0 auto;
+  max-width: 896px;
+}
+
+/* If the container is positioned in main elements make ... */
+main.container{
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+/* sections */
+.article{
+  align-items: center;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: [texts] minmax(375px, 1fr) [image] 2fr;
+}
+
+.article.article__text{
+  grid-column: texts;
+}
+
+.article.article__images{
+  grid-column: image;
+}
+
+/* 1. Text adjusts */
+
+/* 1.1 Hero sizes are diferents of the others */
+.article__text h1{
+  font: 700 3rem/ 100% var(--font);
+  color: var(--dark);
+  margin-bottom: 1rem;
+}
+.article__text h1 + p{
+  font: 400 1.25rem/ 128% var(--font);
+  color: var(--dark);
+  margin-bottom: 1rem;
+}
+/* 1.2 Others sizes are more simple */
+.article__text h2{
+  font: 700 2rem/ 100% var(--font);
+  color: var(--dark);
+  margin-bottom: .75rem; /* 12px */
+}
+.article__text p{
+  color: var(--dark-light);
+  margin-bottom: .75rem; /* 12px */
+}
