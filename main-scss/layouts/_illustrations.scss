@@ -7,12 +7,18 @@
         border-radius: 10px;
         height: 438px;
         margin-bottom: 40px;
-        padding-left: 120px;
+        padding: 40px 20px 40px 120px;
         &-text {
             flex-basis: 50%;
+            h2 {
+                margin-bottom: 25px;
+            }
+            p {
+                color: #8b8e93;
+            }
         }
         img {
-            flex-basis: 50%;
+            flex-basis: 40%;
             height: 100%;
         }
     }

@@ -41,7 +41,7 @@ header button {
 .main .call-to-action {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 158px;
+  margin-bottom: 250px;
 }
 .main .call-to-action .main-text {
   flex-basis: 45%;
@@ -79,20 +79,57 @@ header button {
   border-radius: 10px;
   height: 438px;
   margin-bottom: 40px;
-  padding-left: 120px;
+  padding: 40px 20px 40px 120px;
 }
-.illustrations .illustration .illustration-text {
+.illustrations .illustration-text {
   flex-basis: 50%;
 }
-.illustrations .illustration .img {
-  flex-basis: 50%;
+.illustrations .illustration-text h2 {
+  margin-bottom: 25px;
+}
+.illustrations .illustration-text p {
+  color: #8b8e93;
+}
+.illustrations .illustration img {
+  flex-basis: 40%;
+  height: 100%;
+}
+
+footer {
+  background-color: #00252e;
+  color: white;
+  padding: 195px 115px 60px;
+}
+footer .logo {
+  background-color: white;
   width: fit-content;
+  margin-bottom: 45px;
 }
-.illustrations .illustration .img .img:not(:nth-of-type(2)) {
-  margin-left: auto;
+footer .footer-cont {
+  display: flex;
 }
-.illustrations .illustration .img img {
-  width: 70%;
+footer .box {
+  flex-basis: 20%;
+  padding-right: 130px;
+}
+footer .box .info {
+  display: flex;
+}
+footer .box i {
+  margin-right: 25px;
+}
+footer .box p {
+  margin-bottom: 25px;
+}
+footer .box:first-child {
+  flex-basis: 40%;
+  font-size: 0.9em;
+}
+footer .media {
+  padding-right: 0;
+}
+footer .media i {
+  font-size: 1.5em;
 }
 
 /*# sourceMappingURL=main.css.map */
