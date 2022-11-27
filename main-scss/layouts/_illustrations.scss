@@ -1,4 +1,8 @@
 .illustrations {
+    margin-bottom: 340px;
+    @include only-mobile {
+        margin-bottom: 170px;
+    }
     .illustration {
         display: flex;
         align-items: center;
@@ -8,8 +12,16 @@
         height: 438px;
         margin-bottom: 40px;
         padding: 40px 20px 40px 120px;
+        @include only-mobile {
+            flex-direction: column-reverse;
+            padding: 70px;
+            text-align: center;
+        }
         &-text {
             flex-basis: 50%;
+            @include only-mobile {
+                flex-basis: 100%;
+            }
             h2 {
                 margin-bottom: 25px;
             }
@@ -20,6 +32,9 @@
         img {
             flex-basis: 40%;
             height: 100%;
+            @include only-mobile {
+                width: 100%;
+            }
         }
     }
 }
